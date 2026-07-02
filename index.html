@@ -96,7 +96,13 @@
     .hero-logo-big { width: 420px; height: 420px; object-fit: contain; filter: drop-shadow(0 0 30px rgba(255,255,255,0.5)) drop-shadow(0 0 8px rgba(255,255,255,0.8)) drop-shadow(0 4px 24px rgba(0,0,0,0.4)); flex-shrink: 0; position: absolute; top: 260px; right: 4%; }
     @media(max-width:1200px){ .hero-logo-big { width: 400px; height: 400px; } }
     @media(max-width:900px){ .hero-logo-big { width: 260px; height: 260px; top: 80px; } }
-    @media(max-width:600px){ .hero-logo-big { display: none; } }
+    @media(max-width:600px){
+      .hero-logo-big { display: none; }
+      #hero {
+        background: linear-gradient(to bottom, rgba(13,27,62,0.72) 0%, rgba(13,27,62,0.60) 60%, rgba(13,27,62,0.75) 100%),
+                    url('https://images.unsplash.com/photo-1520255870062-bd79d3865de7?w=1600&auto=format&fit=crop') center/cover no-repeat;
+      }
+    }
     .hero-badge { display: inline-block; background: var(--blue); color: var(--white); font-size: .75rem; font-weight: 700; padding: 5px 14px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
     .hero-content h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2.2rem,5vw,3.8rem); font-weight: 900; color: var(--white); line-height: 1.1; margin-bottom: 16px; }
     .hero-content h1 span { color: var(--white); }
