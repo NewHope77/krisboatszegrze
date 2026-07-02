@@ -47,10 +47,13 @@
       min-height: 100vh;
       background: linear-gradient(to right, rgba(13,27,62,0.55) 0%, rgba(13,27,62,0.25) 40%, rgba(13,27,62,0.0) 65%, transparent 100%),
                   url('https://images.unsplash.com/photo-1520255870062-bd79d3865de7?w=1600&auto=format&fit=crop') center/cover no-repeat;
-      display: flex; align-items: center;
+      display: flex; align-items: center; justify-content: space-between;
       padding: 90px 5% 0;
     }
-    .hero-content { max-width: 680px; }
+    .hero-content { max-width: 600px; }
+    .hero-logo-big { width: 280px; height: 280px; object-fit: contain; filter: drop-shadow(0 4px 24px rgba(0,0,0,0.5)); flex-shrink: 0; }
+    @media(max-width:900px){ .hero-logo-big { width: 180px; height: 180px; } }
+    @media(max-width:600px){ .hero-logo-big { display: none; } }
     .hero-badge { display: inline-block; background: var(--blue); color: var(--white); font-size: .75rem; font-weight: 700; padding: 5px 14px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
     .hero-content h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2.2rem,5vw,3.8rem); font-weight: 900; color: var(--white); line-height: 1.1; margin-bottom: 16px; }
     .hero-content h1 span { color: var(--white); }
@@ -240,6 +243,7 @@
       <a href="tel:601962773" class="btn-outline">Zadzwoń: 601 962 773</a>
     </div>
   </div>
+  <img src="logo.png" alt="Kris Boats Zegrze" class="hero-logo-big" />
 </section>
 
 <!-- OFFER -->
